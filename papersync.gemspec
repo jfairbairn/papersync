@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["James Fairbairn"]
   s.date = %q{2010-08-24}
   s.default_executable = %q{papersync}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{}
   s.email = %q{james@netlagoon.com}
   s.executables = ["papersync"]
   s.extra_rdoc_files = [
@@ -26,13 +26,14 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "bin/papersync",
-     "lib/papersync.rb"
+     "lib/papersync.rb",
+     "papersync.gemspec"
   ]
   s.homepage = %q{http://github.com/jfairbairn/papersync}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Download your Instapaper content in mobi format}
+  s.summary = %q{Download your Instapaper content in mobi format.}
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
