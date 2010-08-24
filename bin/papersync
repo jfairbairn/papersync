@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'papersync'
+
+def die(msg)
+  STDERR.puts msg
+  exit -1
+end
+
+die "Usage: papersync <destdir>" unless ARGV.size == 1
+dirpath = ARGV[0]
+die "Directory #{dirpath} does not exist!" unless File.exist? dirpath
+die "Directory #{dirpath} is not a directory!" unless File.directory? dirpath
+
+PaperSync.new(PaperSync::Credentials.new, dirpath).fetch
